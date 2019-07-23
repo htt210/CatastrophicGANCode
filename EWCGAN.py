@@ -210,8 +210,11 @@ def GAN_GP(D, G, data, noise, nc, img_size, niter=10000, d_steps=1, batch_size=3
 
     start = datetime.datetime.now()
     for iter in range(niter):
-        if iter % 1000 == 0:
+        if iter % 100 == 0:
             print(datetime.datetime.now() - start, iter)
+
+        if iter % 1000 == 0:
+            print(datetime.datetime.now() - start, iter, 'logging')
             with torch.no_grad():
                 fake_batch = G(fixed_z)
                 imgs = fake_batch.data.resize(64, nc, img_size, img_size)
