@@ -10,6 +10,8 @@ from Datasets import *
 import os
 import argparse
 import datetime
+import matplotlib
+matplotlib.use('agg')
 import matplotlib.pyplot as plt
 import numpy as np
 
