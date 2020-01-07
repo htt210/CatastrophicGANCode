@@ -19,7 +19,13 @@ Code for our paper "Catastrophic Forgetting and Mode Collapse in GANs". If you f
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 ```
+
+Depencies:
+- Pytorch 0.4
+
 Usage:
 ```
 ./runDATASET_ALGO.sh
 ```
+This project shares the same code base as our project on generalization:
+https://github.com/htt210/GeneralizationAndStabilityInGANs
