@@ -1,0 +1,19 @@
+DCGAN imbalanced 10 1
+python ComputeInception.py -gpath "/home/htt210/github/figs/gan_dcgan_cifar10_nn512_rt10.0_ft1.0_nr3_nf64_nf64_ld0.0002_lg0.0002_nd1_ng1_gt0.0_gr0.0_grNone_oradam_mm0.0_b10.5_b20.99_dsNone_ntGaussian_nm100_ns50001_be64_sv0.02_se1_ip0.01_idslerp_ne100.0_np1.0_ntTrue_ieFalse_/2019-11-29 08:42:54.535094/G.t7"
+(2.6949427276090145, 0.0)
+
+DCGAN0GP imbalanced 10 1; gpweight 10
+(3.491206199836616, 0.0)
+
+DCGAN0GP imbalanced 10 1; gpweight 100
+(3.6580440705222217, 0.0)
+
+
+DCGAN
+(1.5819933413484495, 0.0)
+
+DCGAN0GP, gpweight 10, iteration 30k
+(2.4194444108828077, 0.0)
+
+
+

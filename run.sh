@@ -1,46 +1,70 @@
 #!/usr/bin/env bash
-python EWCGAN.py --ewcweight 10 --discount 0.9 --interval 200 --device $1
-python EWCGAN.py --ewcweight 10 --discount 0.9 --interval 100 --device $1
-python EWCGAN.py --ewcweight 10 --discount 0.9 --interval 10 --device $1
-python EWCGAN.py --ewcweight 10 --discount 0.9 --interval 1 --device $1
+python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 100 -gp_center 0 -gp_inter 1
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 1e-4 -lrd 3e-4 -gp_weight 100 -gp_center 0 -gp_inter 1
+python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 0 -gp_center 0
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 1e-4 -lrd 3e-4 -gp_weight 100 -gp_center 0
+python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 100 -gp_center 0
 
-python EWCGAN.py --ewcweight 10 --discount 0.95 --interval 200 --device $1
-python EWCGAN.py --ewcweight 10 --discount 0.95 --interval 100 --device $1
-python EWCGAN.py --ewcweight 10 --discount 0.95 --interval 10 --device $1
-python EWCGAN.py --ewcweight 10 --discount 0.95 --interval 1 --device $1
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 0 -gp_center 0 -optimizer sgd -momentum 0.9
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 100 -gp_center 0 -optimizer sgd -momentum 0.9
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 100 -gp_center 0 -gp_inter 1 -optimizer sgd -momentum 0.9
+#python MainExtrema.py -loss wgan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 1 -optimizer sgd -momentum 0.9
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 0 -gp_center 0 -optimizer sgd -momentum 0.9
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 100 -gp_center 0 -optimizer sgd -momentum 0.9
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 100 -gp_center 0 -gp_inter 1 -optimizer sgd -momentum 0.9
+#python MainExtrema.py -loss wgan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 1 -optimizer sgd -momentum 0.9
 
-python EWCGAN.py --ewcweight 10 --discount 0.99 --interval 200 --device $1
-python EWCGAN.py --ewcweight 10 --discount 0.99 --interval 100 --device $1
-python EWCGAN.py --ewcweight 10 --discount 0.99 --interval 10 --device $1
-python EWCGAN.py --ewcweight 10 --discount 0.99 --interval 1 --device $1
 
-python EWCGAN.py --ewcweight 20 --discount 0.9 --interval 200 --device $1
-python EWCGAN.py --ewcweight 20 --discount 0.9 --interval 100 --device $1
-python EWCGAN.py --ewcweight 20 --discount 0.9 --interval 10 --device $1
-python EWCGAN.py --ewcweight 20 --discount 0.9 --interval 1 --device $1
 
-python EWCGAN.py --ewcweight 20 --discount 0.95 --interval 200 --device $1
-python EWCGAN.py --ewcweight 20 --discount 0.95 --interval 100 --device $1
-python EWCGAN.py --ewcweight 20 --discount 0.95 --interval 10 --device $1
-python EWCGAN.py --ewcweight 20 --discount 0.95 --interval 1 --device $1
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 1e-4 -lrd 1e-4 -gp_weight 100 -gp_center 0 -optimizer sgd
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 1e-4 -lrd 1e-4 -gp_weight 100 -gp_center 0 -optimizer sgd
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 1e-4 -lrd 1e-4 -gp_weight 100 -gp_center 0 -optimizer sgd
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 1e-4 -lrd 1e-4 -gp_weight 100 -gp_center 0 -optimizer sgd
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 1e-4 -lrd 1e-4 -gp_weight 100 -gp_center 0 -optimizer sgd
 
-python EWCGAN.py --ewcweight 20 --discount 0.99 --interval 200 --device $1
-python EWCGAN.py --ewcweight 20 --discount 0.99 --interval 100 --device $1
-python EWCGAN.py --ewcweight 20 --discount 0.99 --interval 10 --device $1
-python EWCGAN.py --ewcweight 20 --discount 0.99 --interval 1 --device $1
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 0
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 0 -gp_inter 1
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 0
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 0 -gp_inter 1
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 0
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 0 -gp_inter 1
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 0
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 0 -gp_inter 1
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 0
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 0 -gp_inter 1
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 0
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 0 -gp_inter 1
+#
+python MainExtrema.py -loss wgan -nd 5 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 100 -gp_center 1
+#python MainExtrema.py -loss wgan -nd 1 -ng 1 -lrg 1e-4 -lrd 3e-4 -gp_weight 100 -gp_center 1
+#python MainExtrema.py -loss wgan -nd 5 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 100 -gp_center 0
+#python MainExtrema.py -loss wgan -nd 1 -ng 1 -lrg 1e-4 -lrd 3e-4 -gp_weight 100 -gp_center 0
+#python MainExtrema.py -loss wgan -nd 5 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 0
+#python MainExtrema.py -loss wgan -nd 5 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 100 -gp_center 0 -gp_inter 1
+#python MainExtrema.py -loss wgan -nd 5 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 0 -gp_inter 1
+python MainExtrema.py -loss wgan -nd 5 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 1
+#python MainExtrema.py -loss wgan -nd 1 -ng 1 -lrg 1e-4 -lrd 3e-4 -gp_weight 10 -gp_center 1
 
-python EWCGAN.py --ewcweight 5 --discount 0.9 --interval 200 --device $1
-python EWCGAN.py --ewcweight 5 --discount 0.9 --interval 100 --device $1
-python EWCGAN.py --ewcweight 5 --discount 0.9 --interval 10 --device $1
-python EWCGAN.py --ewcweight 5 --discount 0.9 --interval 1 --device $1
+#python MainExtrema.py -loss wgan -nd 5 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 1 -optimizer sgd
+#python MainExtrema.py -loss wgan -nd 5 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 1 -optimizer sgd
+#python MainExtrema.py -loss wgan -nd 5 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 1 -optimizer sgd
+#python MainExtrema.py -loss wgan -nd 5 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 1 -optimizer sgd
+#python MainExtrema.py -loss wgan -nd 5 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 10 -gp_center 1 -optimizer sgd
 
-python EWCGAN.py --ewcweight 5 --discount 0.95 --interval 200 --device $1
-python EWCGAN.py --ewcweight 5 --discount 0.95 --interval 100 --device $1
-python EWCGAN.py --ewcweight 5 --discount 0.95 --interval 10 --device $1
-python EWCGAN.py --ewcweight 5 --discount 0.95 --interval 1 --device $1
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 0 -gp_center 0 -optimizer sgd -momentum 0.9
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 0 -gp_center 0 -optimizer sgd -momentum 0.9
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 0 -gp_center 0 -optimizer sgd -momentum 0.9
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 0 -gp_center 0 -optimizer sgd -momentum 0.9
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 0 -gp_center 0 -optimizer sgd -momentum 0.9
 
-python EWCGAN.py --ewcweight 5 --discount 0.99 --interval 200 --device $1
-python EWCGAN.py --ewcweight 5 --discount 0.99 --interval 100 --device $1
-python EWCGAN.py --ewcweight 5 --discount 0.99 --interval 10 --device $1
-python EWCGAN.py --ewcweight 5 --discount 0.99 --interval 1 --device $1
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 0 -gp_center 0 -optimizer sgd -momentum 0.99
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 0 -gp_center 0 -optimizer sgd -momentum 0.99
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 0 -gp_center 0 -optimizer sgd -momentum 0.99
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 0 -gp_center 0 -optimizer sgd -momentum 0.99
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 3e-4 -lrd 3e-4 -gp_weight 0 -gp_center 0 -optimizer sgd -momentum 0.99
 
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 1e-4 -lrd 1e-4 -gp_weight 0 -gp_center 0 -optimizer sgd -momentum 0.9
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 1e-4 -lrd 1e-4 -gp_weight 0 -gp_center 0 -optimizer sgd -momentum 0.9
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 1e-4 -lrd 1e-4 -gp_weight 0 -gp_center 0 -optimizer sgd -momentum 0.9
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 1e-4 -lrd 1e-4 -gp_weight 0 -gp_center 0 -optimizer sgd -momentum 0.9
+#python MainExtrema.py -loss gan -nd 1 -ng 1 -lrg 1e-4 -lrd 1e-4 -gp_weight 0 -gp_center 0 -optimizer sgd -momentum 0.9
