@@ -19,3 +19,7 @@ Code for our paper "Catastrophic Forgetting and Mode Collapse in GANs". If you f
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 ```
+Usage:
+```
+./runDATASET_ALGO.sh
+```
