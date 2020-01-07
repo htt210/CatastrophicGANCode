@@ -1,6 +1,6 @@
-# Catastrophic Forgetting and Mode Collapse in GANs
+# On Catastrophic Forgetting and Mode Collapse in GANs
 
-Code for our paper "Catastrophic Forgetting and Mode Collapse in GANs". If you find this code useful, please cite our paper:
+Code for our paper [On Catastrophic Forgetting and Mode Collapse in GANs](https://arxiv.org/abs/1807.04015). If you find this code useful, please cite our paper:
 ```text
 @article{DBLP:journals/corr/abs-1807-04015,
   author    = {Hoang Thanh{-}Tung and
